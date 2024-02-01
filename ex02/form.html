@@ -1,34 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<title>my form</title>
+		<meta charset="utf-8">
 		<script src="popup.js"></script>
 	</head>
 	<body>
-		<form onsubmit="return false;">
+		<form action="">
 			<p>
 				<label for="firstname">Firstname : </label>
-				<input id="firstname"/>
+				<input id="firstname" name="firstname"/>
 			</p>
 			<p>
 				<label for="name">Name : </label>
-				<input id="name"/>
+				<input id="name" name="name"/>
 			</p>
 			<p>
 				<label for="age">Age : </label>
-				<input id="age" type="number"/>
+				<input id="age" name="age" type="number"/>
 			</p>
 			<p>
 				<label for="phone">Phone : </label>
-				<input id="phone" type="tel"/>
+				<input id="phone" name="phone" type="tel"/>
 			</p>
 			<p>
 				<label for="email">Email : </label>
-				<input id="email" type="email"/>
+				<input id="email" name="email" type="email"/>
 			</p>
 			<p>
 				<label for="student">Student at 42 ? </label>
-				<input id="student" type="checkbox"/>
+				<input id="student" name="student" type="checkbox"/>
 			</p>
 			<p>
 				<label for="gender_male">Male</label>
@@ -38,7 +39,7 @@
 				<label for="gender_other">Other</label>
 				<input id="gender_other" name="gender" value="Other" type="radio"/>
 			</p>
-			<button type="submit" onclick='displayFormContents();'>OK</button>
+			<button type="submit" onclick='displayFormContents();'>Run that sexy Javascript !</button>
 		</form>
 	</body>
 </html>
